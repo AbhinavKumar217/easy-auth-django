@@ -13,10 +13,6 @@ def registration(request):
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
-            firstname = form.cleaned_data['firstname']
-            lastname = form.cleaned_data['lastname']
-            occupation = form.cleaned_data['occupation']
-            location = form.cleaned_data['location']
 
             user = User.objects.create_user(username=username, email=email, password=password)
 
