@@ -28,8 +28,6 @@
             <h2 class="mb-4">Welcome, {{ username }}!</h2>
             <p><strong>Username:</strong> {{ user.username }}</p>
             <p><strong>Email:</strong> {{ user.email }}</p>
-
-            <!-- Add more styling here as needed -->
             <form method="post" action="{% url 'logout' %}">
                 {% csrf_token %}
                 <button type="submit" class="btn btn-danger btn-block mt-3">Logout</button>
